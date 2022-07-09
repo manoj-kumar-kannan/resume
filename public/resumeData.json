@@ -1,13 +1,14 @@
 {
   "main": {
     "name": "Manoj Kumar",
-    "occupation": "Full Stack and Mobile App Developer",
-    "description": "I eat, sleep and breathe React",
+    "occupation": "Full Stack Developer",
+    "description": "I eat, sleep and code",
     "image": "profilepic.png",
-    "bio": "Hi there! I am Manoj! I've been coding for over 4+ years now. As a Full Stack developer I've worked both with startups and large corporations to help build & scale their companies. Along the journey I realised my passion existed in helping others excel and pursue their dreams as upcoming developers. With this passion, I have now trained thousand's of developers across the globe. Through live coaching sessions on Youtube, I have accumulated several MILLION views demonstrating how to apply developer skills in a range of cool builds and challenges. I deliver REAL VALUE by teaching REAL WORLD projects to help students enter the world of web development. You’ll get hands-on experience and learn the skills that are required to succeed in the real-world in this community.",
+    "bio": "Hi there, I am Manoj Passionate full-stack developer with 6+ years of hands-on experience in developing scalable websites/applications using a wide range of front-end and back-end skills like HTML, CSS, JavaScript, React JS, Angular, React Native, Ionic and Node JS. Developed 5+ websites / projects from scratch at previous organization. Looking to further enhance HTML5, CSS3, JS skills as the future full stack developer.",
     "contactmessage": "Get in touch with me",
     "email": "kmanojkumar.it@gmail.com",
-    "phone": "+91 8681059206",
+    "phone": "+91 8681059206 / 8072896252",
+    "location": "Chennai",
     "address": {
       "street": "64 Keelakadai Street",
       "city": "Virudhunagar",
@@ -24,17 +25,17 @@
       },
       {
         "name": "linkedin",
-        "url": "https://www.linkedin.com/in/saajansangha",
+        "url": "https://www.linkedin.com/in/manoj-kumar-kannan/",
         "className": "fa fa-linkedin"
       },
       {
         "name": "instagram",
-        "url": "https://www.instagram.com/manoj_kumar_kannan/",
+        "url": "https://www.instagram.com/__manojkumar.k/",
         "className": "fa fa-instagram"
       },
       {
         "name": "github",
-        "url": "https://github.com/PapaReact",
+        "url": "https://github.com/manoj-kumar-kannan/",
         "className": "fa fa-github"
       }
     ]
@@ -45,38 +46,48 @@
       {
         "school": "VHNSN College, Virudhunagar",
         "degree": "Bachelor's Degree, Information Technology",
-        "graduated": "April 2013",
+        "graduated": "April",
         "description": "Graduated with First Class"
       }
     ],
     "work": [
       {
+        "company": "Capgemini",
+        "title": "Consultant",
+        "years": "Jun 2021 - Present",
+        "description": "Working as a consultant in capgemini since Jun 2021."
+      },
+      {
         "company": "CloudB Software Solutions Pvt Ltd",
-        "title": "Full Stack Developer and Mobile App Developer",
-        "years": "Dec 2019 - Present",
-        "description": "Cloning all the apps possible. On the way to clone the world! Building the PAPA Fam as large as possible."
+        "title": "Full Stack Developer",
+        "years": "Dec 2019 - May 2021",
+        "description": "Worked as a full stack web and mobile app developer. Done multiple projects and products as a team and individual. Concentrate more on complex UI and styles. My goal is turning complex UI into user friendly UI."
       }
     ],
     "skills": [
       {
-        "name": "ReactJs",
-        "level": "70%"
-      },
-      {
         "name": "Angular",
-        "level": "75%"
+        "level": "80%"
       },
       {
         "name": "JavaScript",
         "level": "80%"
       },
       {
-        "name": "Mobile App Development",
-        "level": "80%"
+        "name": "HTML 5 and CSS 3",
+        "level": "85%"
       },
       {
-        "name": "Web Development",
-        "level": "95%"
+        "name": "ReactJs",
+        "level": "70%"
+      },
+      {
+        "name": "React Native",
+        "level": "60%"
+      },
+      {
+        "name": "Node JS",
+        "level": "50%"
       }
     ]
   },
@@ -84,7 +95,7 @@
     "projects": [
       {
         "title": "Signal Clone (React Native)",
-        "category": "",
+        "category": "Mobile App",
         "image": "signal.png",
         "url": "#"
       }
