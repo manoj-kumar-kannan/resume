@@ -1,0 +1,116 @@
+{
+  "main": {
+    "name": "Manoj Kumar",
+    "occupation": "Full Stack Developer",
+    "description": "I eat, sleep and code",
+    "image": "profilepic.png",
+    "bio": "Hi there, I am Manoj Passionate full-stack developer with 6+ years of hands-on experience in developing scalable websites/applications using a wide range of front-end and back-end skills like HTML, CSS, JavaScript, React JS, Angular, React Native, Ionic and Node JS. Developed 5+ websites / projects from scratch at previous organization. Looking to further enhance HTML5, CSS3, JS skills as the future full stack developer.",
+    "contactmessage": "Get in touch with me",
+    "email": "kmanojkumar.it@gmail.com",
+    "phone": "+91 8681059206 / 8072896252",
+    "location": "Chennai",
+    "address": {
+      "street": "64 Keelakadai Street",
+      "city": "Virudhunagar",
+      "state": "Tamilnadu",
+      "zip": "626001"
+    },
+    "website": "https://www.papareact.com/course",
+    "resumedownload": "http://papareact.com",
+    "social": [
+      {
+        "name": "facebook",
+        "url": "https://www.facebook.com/manoj.virudhunagar/",
+        "className": "fa fa-facebook"
+      },
+      {
+        "name": "linkedin",
+        "url": "https://www.linkedin.com/in/manoj-kumar-kannan/",
+        "className": "fa fa-linkedin"
+      },
+      {
+        "name": "instagram",
+        "url": "https://www.instagram.com/__manojkumar.k/",
+        "className": "fa fa-instagram"
+      },
+      {
+        "name": "github",
+        "url": "https://github.com/manoj-kumar-kannan/",
+        "className": "fa fa-github"
+      }
+    ]
+  },
+  "resume": {
+    "skillmessage": "My Programming Language Proficiency",
+    "education": [
+      {
+        "school": "VHNSN College, Virudhunagar",
+        "degree": "Bachelor's Degree, Information Technology",
+        "graduated": "April",
+        "description": "Graduated with First Class"
+      }
+    ],
+    "work": [
+      {
+        "company": "Capgemini",
+        "title": "Consultant",
+        "years": "Jun 2021 - Present",
+        "description": "Working as a consultant in capgemini since Jun 2021."
+      },
+      {
+        "company": "CloudB Software Solutions Pvt Ltd",
+        "title": "Full Stack Developer",
+        "years": "Dec 2019 - May 2021",
+        "description": "Worked as a full stack web and mobile app developer. Done multiple projects and products as a team and individual. Concentrate more on complex UI and styles. My goal is turning complex UI into user friendly UI."
+      }
+    ],
+    "skills": [
+      {
+        "name": "Angular",
+        "level": "80%"
+      },
+      {
+        "name": "JavaScript",
+        "level": "80%"
+      },
+      {
+        "name": "HTML 5 and CSS 3",
+        "level": "85%"
+      },
+      {
+        "name": "ReactJs",
+        "level": "70%"
+      },
+      {
+        "name": "React Native",
+        "level": "60%"
+      },
+      {
+        "name": "Node JS",
+        "level": "50%"
+      }
+    ]
+  },
+  "portfolio": {
+    "projects": [
+      {
+        "title": "Signal Clone (React Native)",
+        "category": "Mobile App",
+        "image": "signal.png",
+        "url": "#"
+      }
+    ]
+  },
+  "testimonials": {
+    "testimonials": [
+      {
+        "text": "Manoj is absolutely excellent, his depth of knowledge... I would definitely recommend",
+        "user": "CloudB Founder"
+      },
+      {
+        "text": "Learning with Manoj has been AWESOME, he makes our product so easy and approachable, you'll finally feel like you know what's going on!",
+        "user": "CloudB CEO"
+      }
+    ]
+  }
+}

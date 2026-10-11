@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="./css/layout.css" />
         <link rel="stylesheet" href="./css/media-queries.css" />
         <link rel="stylesheet" href="./css/magnific-popup.css" />
+        <link rel="stylesheet" href="./assets/index.css" />
 
         <title>Manoj's Portfolio</title>
     </head>
@@ -29,6 +30,12 @@
         <script src="./js/jquery.fittext.js"></script>
         <script src="./js/magnific-popup.js"></script>
         <script src="./js/init.js"></script>
-        <script type="module" src="./src/index.jsx"></script>
+        <script type="module">
+            if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+                import('./src/index.jsx');
+            } else {
+                import('./assets/index.js');
+            }
+        </script>
     </body>
 </html>
