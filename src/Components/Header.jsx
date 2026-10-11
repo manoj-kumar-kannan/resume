@@ -1,5 +1,5 @@
 import React from "react";
-import TypeWriter from "react-typewriter";
+import TypeWriter from "./TypeWriter";
 
 const Header = ({ data }) => {
   if (data) {
