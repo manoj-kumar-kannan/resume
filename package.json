@@ -2,6 +2,7 @@
   "name": "resume",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://manoj-kumar-kannan.github.io/resume",
   "type": "module",
   "scripts": {
     "start": "vite",
