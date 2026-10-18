@@ -187,7 +187,15 @@
 
    /* Header Styles
    -------------------------------------------------------------------- */
+   header {
+      min-height: 100vh;
+      min-height: 100dvh;
+      padding: 60px 15px 30px 15px;
+      box-sizing: border-box;
+   }
    header .banner {
+      margin: auto 0;
+      width: 100%;
       padding-bottom: 12px;
       padding-top: 6px;
    }
@@ -349,7 +357,18 @@
 
    /* header styles
    -------------------------------------------------------------------- */
-   header .banner { padding-top: 24px; }
+   header {
+      min-height: 100vh;
+      min-height: 100dvh;
+      padding: 50px 10px 20px 10px;
+      box-sizing: border-box;
+   }
+   header .banner {
+      margin: auto 0;
+      width: 100%;
+      padding-top: 10px;
+      padding-bottom: 10px;
+   }
    header .banner-text h1 {
       font: 40px/1.1em 'opensans-bold', sans-serif;      
       margin: 0 auto 24px auto;

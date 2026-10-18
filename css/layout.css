@@ -30,29 +30,27 @@ body { background: #0f0f0f; }
 
 header {
    position: relative;
-   height: 100vh;
-   height: 100dvh;
+   width: 100%;
    min-height: 100vh;
    min-height: 100dvh;
-   width: 100%;
-   background: #161415 url(../images/header-background.jpg) no-repeat top center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background: #161415 url(../images/header-background.jpg) no-repeat center center;
    background-size: cover !important;
 	-webkit-background-size: cover !important;
    text-align: center;
-   overflow: hidden;
+   padding: 40px 0;
+   box-sizing: border-box;
 }
 
 /* vertically center banner section */
 header:before {
-   content: '';
-   display: inline-block;
-   vertical-align: middle;
-   height: 100%;
+   display: none;
 }
 header .banner {
-   display: inline-block;
-   vertical-align: middle;
-   margin: 0 auto;
+   margin: auto 0;
    width: 85%;
    padding-bottom: 30px;
    text-align: center;
