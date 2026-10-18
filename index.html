@@ -30,10 +30,10 @@
         <script src="./js/magnific-popup.js"></script>
         <script src="./js/init.js"></script>
         <script type="module">
-            if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+            if (import.meta.hot) {
                 import('./src/index.jsx');
             } else {
-                import(/* @vite-ignore */ './assets/index.js');
+                import('./assets/index.js');
             }
         </script>
     </body>
