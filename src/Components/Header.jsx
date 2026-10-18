@@ -19,7 +19,7 @@ const Header = ({ data }) => {
   }
 
   return (
-    <header id="home">
+    <header id="home" style={{ minHeight: "100vh" }}>
       <nav id="nav-wrap">
         <a className="mobile-btn" href="#nav-wrap" title="Show navigation">
           Show navigation
