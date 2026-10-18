@@ -29,7 +29,20 @@ const Footer = ({ data }) => {
           </ul>
         </div>
         <div id="go-top">
-          <a className="smoothscroll" title="Back to Top" href="#home">
+          <a
+            className="smoothscroll"
+            title="Back to Top"
+            href="#home"
+            onClick={(e) => {
+              e.preventDefault();
+              document.getElementById("home")?.scrollIntoView({ behavior: "smooth" });
+              if (window.history.pushState) {
+                window.history.pushState(null, "", "#home");
+              } else {
+                window.location.hash = "home";
+              }
+            }}
+          >
             <i className="icon-up-open"></i>
           </a>
         </div>
