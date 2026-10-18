@@ -10,7 +10,6 @@
         <link rel="stylesheet" href="./css/layout.css" />
         <link rel="stylesheet" href="./css/media-queries.css" />
         <link rel="stylesheet" href="./css/magnific-popup.css" />
-        <link rel="stylesheet" href="./assets/index.css" />
 
         <title>Manoj's Portfolio</title>
     </head>
@@ -34,7 +33,7 @@
             if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
                 import('./src/index.jsx');
             } else {
-                import('./assets/index.js');
+                import(/* @vite-ignore */ './assets/index.js');
             }
         </script>
     </body>
