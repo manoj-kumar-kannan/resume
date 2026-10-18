@@ -1,7 +1,76 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import TypeWriter from "./TypeWriter";
 
+const NAV_ITEMS = [
+  { id: "home", label: "Home" },
+  { id: "about", label: "About" },
+  { id: "resume", label: "Experience" },
+  { id: "portfolio", label: "Works" },
+  { id: "testimonials", label: "Testimonials" },
+  { id: "contact", label: "Contact" },
+];
+
 const Header = ({ data }) => {
+  const [activeSection, setActiveSection] = useState(() => {
+    const hash = window.location.hash.replace("#", "");
+    return hash && NAV_ITEMS.some((item) => item.id === hash) ? hash : "home";
+  });
+
+  const handleNavClick = (e, sectionId) => {
+    e.preventDefault();
+    setActiveSection(sectionId);
+    const target = document.getElementById(sectionId);
+    if (target) {
+      target.scrollIntoView({ behavior: "smooth" });
+    }
+    if (window.history.pushState) {
+      window.history.pushState(null, "", `#${sectionId}`);
+    } else {
+      window.location.hash = sectionId;
+    }
+  };
+
+  useEffect(() => {
+    const sectionIds = NAV_ITEMS.map((item) => item.id);
+
+    const handleScroll = () => {
+      const isAtBottom =
+        window.innerHeight + window.scrollY >=
+        document.documentElement.scrollHeight - 50;
+
+      if (isAtBottom) {
+        setActiveSection("contact");
+        return;
+      }
+
+      const scrollPosition = window.scrollY + 200;
+
+      for (let i = sectionIds.length - 1; i >= 0; i--) {
+        const section = document.getElementById(sectionIds[i]);
+        if (section && section.offsetTop <= scrollPosition) {
+          setActiveSection(sectionIds[i]);
+          break;
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    handleScroll();
+
+    const handleHashChange = () => {
+      const hash = window.location.hash.replace("#", "");
+      if (hash && sectionIds.includes(hash)) {
+        setActiveSection(hash);
+      }
+    };
+    window.addEventListener("hashchange", handleHashChange);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("hashchange", handleHashChange);
+    };
+  }, []);
+
   if (data) {
     var name = data.name;
     var occupation = data.occupation;
@@ -29,36 +98,20 @@ const Header = ({ data }) => {
         </a>
 
         <ul id="nav" className="nav">
-          <li className="current">
-            <a className="smoothscroll" href="#home">
-              Home
-            </a>
-          </li>
-          <li>
-            <a className="smoothscroll" href="#about">
-              About
-            </a>
-          </li>
-          <li>
-            <a className="smoothscroll" href="#resume">
-              Experience
-            </a>
-          </li>
-          <li>
-            <a className="smoothscroll" href="#portfolio">
-              Works
-            </a>
-          </li>
-          <li>
-            <a className="smoothscroll" href="#testimonials">
-              Testimonials
-            </a>
-          </li>
-          <li>
-            <a className="smoothscroll" href="#contact">
-              Contact
-            </a>
-          </li>
+          {NAV_ITEMS.map((item) => (
+            <li
+              key={item.id}
+              className={activeSection === item.id ? "current" : ""}
+            >
+              <a
+                className="smoothscroll"
+                href={`#${item.id}`}
+                onClick={(e) => handleNavClick(e, item.id)}
+              >
+                {item.label}
+              </a>
+            </li>
+          ))}
         </ul>
       </nav>
 
@@ -76,7 +129,11 @@ const Header = ({ data }) => {
       </div>
 
       <p className="scrolldown">
-        <a className="smoothscroll" href="#about">
+        <a
+          className="smoothscroll"
+          href="#about"
+          onClick={(e) => handleNavClick(e, "about")}
+        >
           <i className="icon-down-circle"></i>
         </a>
       </p>
